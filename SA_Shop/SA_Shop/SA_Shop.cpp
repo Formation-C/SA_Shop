@@ -2,10 +2,32 @@
 //
 
 #include <iostream>
+#include "computer.h"
+
+using namespace std;
+
+void displayProduct(Product& product)
+{
+	cout << "ref_adre :" << &product << endl;
+	cout << product.model << endl;
+}
+
+void displayProductbypointer(Product * product)
+{
+	cout << "point_adre :" << product << endl;
+	cout << product->model << endl;
+}
 
 int main()
 {
-    std::cout << "Hello World!\n";
+	//Product under dev
+    cout << "Hello World!\n";
+	Computer myComputer;
+	myComputer.model = "PIC6";
+	cout << "mycompadre: " << &myComputer << endl;
+	displayProduct(myComputer);
+	displayProductbypointer(&myComputer);
+	myComputer.turnOnOff();
 }
 
 // Exécuter le programme : Ctrl+F5 ou menu Déboguer > Exécuter sans débogage
