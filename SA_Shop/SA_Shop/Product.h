@@ -1,6 +1,8 @@
 #pragma once
 
 #include <iostream>
+
+#include "brand.h"
 using namespace std;
 
 class Product
@@ -16,7 +18,11 @@ class Product
 
 		string model;
 
+		brand* Brand; //Composition
+		
 		Product();
+
+		Product(brand* _Brand);
 
 		virtual ~Product();
 

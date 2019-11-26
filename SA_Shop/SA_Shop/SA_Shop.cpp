@@ -22,7 +22,11 @@ int main()
 {
 	//Product under dev
     cout << "Hello World!\n";
+	brand carrier;
+	carrier.SetName = "Carrier"
 	Computer myComputer;
+	
+	Computer mySecondComputer(&carrier);
 	myComputer.model = "PIC6";
 	cout << "mycompadre: " << &myComputer << endl;
 	displayProduct(myComputer);

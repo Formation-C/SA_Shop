@@ -151,11 +151,13 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="brand.cpp" />
     <ClCompile Include="computer.cpp" />
     <ClCompile Include="Product.cpp" />
     <ClCompile Include="SA_Shop.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="brand.h" />
     <ClInclude Include="computer.h" />
     <ClInclude Include="Product.h" />
   </ItemGroup>

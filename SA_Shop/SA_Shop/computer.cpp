@@ -1,10 +1,6 @@
 #include "computer.h"
 
 
-Computer::Computer()
-{
-	//ctor 
-}
 
 Computer::~Computer()
 {
